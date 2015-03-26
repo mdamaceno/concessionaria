@@ -29,12 +29,15 @@ public class MainActivity extends ActionBarActivity {
         String usuarioInformado = edtUsuario.getText().toString();
         String senhaInformada = edtSenha.getText().toString();
 
-        if ("marco".equals(usuarioInformado) || "victor".equals(usuarioInformado) && "123".equals(senhaInformada)) {
+        if ("marco".equals(usuarioInformado) && "123".equals(senhaInformada)) {
             startActivity(new Intent(this, CadastroCarro.class));
+        } else if ("victor".equals(usuarioInformado) && "123".equals(senhaInformada)){
+        startActivity(new Intent(this, CadastroCarro.class));
         } else {
             String mensagemErro = "Usuário ou senha inválidos!";
             Toast toast = Toast.makeText(this, mensagemErro, Toast.LENGTH_LONG);
             toast.show();
+            edtSenha.setText("");
         }
     }
 }
