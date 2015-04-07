@@ -40,4 +40,8 @@ public class MainActivity extends ActionBarActivity {
             edtSenha.setText("");
         }
     }
+
+    public void cadastrarUsuario(View view){
+        startActivity(new Intent(this, CadastroCliente.class));
+    }
 }

@@ -386,6 +386,7 @@
                 android:layout_height="fill_parent"
                 android:text="Salvar"
                 android:id="@+id/button"
+                android:onClick="salvarCadastro"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </LinearLayout>
