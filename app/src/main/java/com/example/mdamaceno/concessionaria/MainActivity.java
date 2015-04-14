@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         if ("marco".equals(usuarioInformado) && "123".equals(senhaInformada)) {
             startActivity(new Intent(this, CadastroCarro.class));
         } else if ("victor".equals(usuarioInformado) && "123".equals(senhaInformada)){
-        startActivity(new Intent(this, CadastroCarro.class));
+            startActivity(new Intent(this, CadastroCarro.class));
         } else {
             String mensagemErro = "Usuário ou senha inválidos!";
             Toast toast = Toast.makeText(this, mensagemErro, Toast.LENGTH_LONG);

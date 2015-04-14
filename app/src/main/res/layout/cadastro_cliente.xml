@@ -191,4 +191,14 @@
         android:onClick="gravarUsuario"
         android:text="CADASTRAR" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20px"
+        android:paddingTop="10px"
+        android:id="@+id/btnMostrar"
+        android:onClick="mostrarUsuarios"
+        android:text="Ver usuários" />
+
 </LinearLayout>

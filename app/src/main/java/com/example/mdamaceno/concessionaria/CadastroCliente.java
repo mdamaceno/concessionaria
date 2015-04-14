@@ -2,6 +2,7 @@ package com.example.mdamaceno.concessionaria;
 
 import android.app.ActionBar;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -98,5 +99,9 @@ public class CadastroCliente extends ActionBarActivity {
             edtSenha.setText("");
             edtSenha2.setText("");
         }
+    }
+
+    public void mostrarUsuarios(View view) {
+        startActivity(new Intent(this, ListaUsuario.class));
     }
 }
